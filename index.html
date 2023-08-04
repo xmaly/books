@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="top-bar">
+            <div class="navigation-links">
+                <div class="logo">
+                    <a href="#">library</a>
+                </div>
+                <div class="other">
+                    <a href="#">Links</a>
+                    <a href="#">Placeholder</a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="add-button">
+                <button class="add-book" onclick="openForm()">+ ADD BOOK</button>
+            </div>
+
+            <div class="books">
+            </div>
+            
+            <div class="form-container">
+                <form action="submit" class="add-book-form">
+                    <h1>Add book</h1>
+    
+                    <label for="title">Name</label>
+                    <input id="title" type="text" placeholder="Enter Title" name="title" required>
+    
+                    <label for="author">Author</label>
+                    <input id="author" type="text" placeholder="Enter Author" name="author" required>
+    
+                    <label for="pages">Pages</label>
+                    <input id="pages" type="text" placeholder="Enter Pages" name="pages" required>
+    
+                    <div class="buttons">
+                        <button class="submit" onclick="">Submit</button>
+                        <button class="close" onclick="closeForm()">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div>copyright © 2023 jakub maly</div> 
+            <a href="https://github.com/xmaly" target="_blank"><img src="github.png"></a>
+        </div>
+    </div>
+</body>
+</html>
